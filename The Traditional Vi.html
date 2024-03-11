@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0030)https://ex-vi.sourceforge.net/ -->
+<html data-bybit-channel-name="OMl_yDOeJ5_bq0mtx_ssX"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><div id="in-page-channel-node-id" data-channel-name="in_page_channel_EEeVor"></div><script async="false" src="chrome-extension://cpmkedoipcpimgecpmgpldfpohjplkpp/window-provider.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>The Traditional Vi</title>
+<link rev="MADE" href="mailto:gunnarr@acm.org">
+<meta name="description" content="Traditional vi text editor">
+<meta name="keywords" content="Linux, Unix, Free, original, traditional,
+	ex, vi, source, UTF-8, multibyte, text editor">
+<style type="text/css">
+<!--
+BODY { max-width: 480pt; }
+BODY,TD,P { text-align: justify; font-size: 10pt; line-height: 14pt;
+	font-family: Verdana,Arial,Helvetica,sans-serif; }
+H1 { color: #666666; line-height: 32pt; font-size: 24pt; font-weight: normal;
+	text-align: center; }
+H2 { color: #666666; line-height: 24pt; font-size: 16pt; font-weight: normal; }
+H3 { color: #666666; line-height: 16pt; font-size: 12pt; font-weight: normal; }
+HR { width: 100%; height: 1pt; border-width: 0px; background-color: #AAAAAA; }
+ADDRESS { font-style: normal; }
+PRE { font-size: 8pt; line-height:14pt; font-family: Courier; }
+//-->
+</style>
+</head>
+
+<body>
+<h1>
+The Traditional Vi
+<br>
+<div style="font-size: 16pt">
+Source Code for Modern Unix Systems
+</div>
+</h1>
+
+<p>
+The <i>vi</i> editor is one of the most common text editors on Unix. It was
+<a href="http://www.linux-mag.com/1999-11/joy_04.html">developed</a>
+starting around 1976 by
+Bill Joy
+at
+<a href="http://www.berkeley.edu/">UCB</a>, who was tired of
+the
+<a href="http://heirloom.sourceforge.net/man/ed.1.html"><i>ed</i></a>
+editor. But since he used <i>ed</i> as a code base, access to the
+original sources has required a commercial Unix Source Code License for more
+than twenty years. In January 2002,
+<a href="http://www.caldera.com/">Caldera</a> was so kind to remove usage
+restrictions to the Ancient Unix Code by a
+<a href="http://www.tuhs.org/Archive/Caldera-license.pdf">BSD-style license</a>
+(see the
+<a href="http://slashdot.org/article.pl?sid=02/01/24/0146248">
+announcement at Slashdot</a>)
+and thus <i>vi</i> is now finally free.
+</p><p>
+Compared to most of its many clones, the traditional <i>vi</i> is a rather
+small program (the binary size is approximately 160 kBytes on i386)
+just with its extremely powerful
+editing interface, but lacking fancy features like multiple undo,
+multiple screens, or syntax highlighting.
+</p><p>
+This port of <i>vi</i> has generally preserved
+the original style, terminal control, and feature set.
+It adds support for international character sets,
+including multibyte encodings such as UTF-8,
+and some minor enhancements that were not present in BSD <i>vi</i> 3.7,
+but had been included in later <i>vi</i> versions for System V or in POSIX.2.
+</p><hr>
+<h2>Download the source code</h2>
+<p>
+<a style="text-align:left;" href="http://prdownloads.sourceforge.net/ex-vi/ex-050325.tar.bz2?download">
+Release 050325 (current)</a>
+</p><p>
+New releases of this project are announced on
+<a href="http://freshmeat.net/projects/vi/">freshmeat.net</a>.
+You can use their subscription service
+to get an email when a new version is available.
+</p><p>
+<a style="text-align:left;" href="http://sourceforge.net/project/showfiles.php?group_id=106239">
+All releases</a>
+</p><p>
+Browse the <a href="http://ex-vi.cvs.sourceforge.net/ex-vi/ex-vi/">CVS repository</a>
+</p><p>
+The most recent results of development are sometimes made available
+in the public CVS repository.
+Use
+</p><pre>$ cvs -d:pserver:anonymous@ex-vi.cvs.sourceforge.net:/cvsroot/ex-vi login
+CVS password:&lt;just type return&gt;
+$ cvs -d:pserver:anonymous@ex-vi.cvs.sourceforge.net:/cvsroot/ex-vi co ex-vi
+</pre>
+to retrieve a copy.
+Follow
+<a href="http://sourceforge.net/cvs/?group_id=106239">these instructions</a>
+for more information.
+If you want to report a problem, please look at the
+<a href="http://ex-vi.cvs.sourceforge.net/ex-vi/ex-vi/Changes?view=markup">Changes file in CVS</a>
+to see if it has already been resolved,
+and if so, try if the fix works for you.
+Do not use the code from CVS unless you have a special reason to do so.
+It may be incorrect, not well tested, and might not even compile.
+Also note that the <i>libuxre</i> subdirectory
+and the <i>regexp.h</i> include file
+are not available from CVS
+because their contents are maintained as part of the
+<a href="http://heirloom.sourceforge.net/">Heirloom Toolchest</a>.
+So to build from CVS sources,
+copy these items from an earlier release archive.
+<hr>
+<h2>Documentation</h2>
+<ul>
+<li>For installation instructions and a list of supported systems, see the
+<a href="https://ex-vi.sourceforge.net/README">README</a>.</li>
+<li><a href="https://ex-vi.sourceforge.net/Changes">Changes in ex and vi</a> is a detailed
+listing of all modifications in the port.
+</li>
+<li><a href="https://ex-vi.sourceforge.net/viin/paper.html">An Introduction to Display Editing with Vi</a>
+is both a tutorial and a source of knowledge for more advanced users.
+This edition contains some annotations for changes in the port.
+It is also available as a
+<a href="https://ex-vi.sourceforge.net/viin/viin.tar.gz">complete archive</a>
+for offline reading.
+</li><li>The <a href="https://ex-vi.sourceforge.net/ex.html">manual page <i>ex</i>(1)</a> provides
+reference documentation for the basic concepts of the editor,
+addressing lines,
+<i>ex</i> commands (prefixed by a ':' in visual mode),
+regular expressions and substitutions,
+and configuration options.
+</li>
+<li>The <a href="https://ex-vi.sourceforge.net/vi.html">manual page <i>vi</i>(1)</a> describes
+the command characters in visual mode.
+</li>
+</ul>
+<p>
+</p><hr>
+
+<img src="./The Traditional Vi_files/vi.png" align="RIGHT" width="123" height="36" alt="This Site vi powered">
+
+<p></p><address>Gunnar Ritter
+&lt;<a href="mailto:gunnarr@acm.org">gunnarr@acm.org</a>&gt; 2007-11-29
+</address>
+<img src="./The Traditional Vi_files/vi_logo_by_urmas_reinsalu.png" align="RIGHT" width="80" height="15" alt="vi logo by Urmas Reinsalu (10/3/05)">
+<hr style="margin-top:20">
+<a href="http://sourceforge.net/projects/ex-vi"><img src="./The Traditional Vi_files/sflogo.php" width="125" height="37" border="0" alt="SourceForge.net Logo"></a>
+ 
+</body></html>
