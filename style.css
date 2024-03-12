@@ -1,0 +1,63 @@
+body {
+  padding-top: 3.75rem;
+  padding-bottom: 2.5rem;
+}
+
+section {
+  padding-top: 1.563rem;
+}
+
+.hero-titles {
+  padding-bottom: 5%;
+}
+
+#getting #binaries h3 {
+  height: 3.875rem;
+}
+
+.logo {
+  padding: 0.5rem;
+  max-height: 3.125rem;
+}
+
+.prelike {
+  display: block;
+  padding: 0.531rem;
+  margin: 0 0 0.563rem;
+  font-size: 0.752rem;
+  line-height: 1.125rem;
+  background-color: #f5f5f5;
+  border: 0.063rem solid #ccc;
+  border: 0.063rem solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+tr.os td {
+  vertical-align: bottom;
+}
+tr.inst td {
+  vertical-align: top;
+}
+
+#about #features .row-fluid {
+  margin-bottom: 1.25rem;
+}
+
+#news #news-list li{
+  padding-bottom: 0.5rem;
+}
+
+dd {
+  padding-bottom: 0.563rem;
+}
+
+#techinfo dl {
+  margin-bottom: 0;
+}
+
+#techinfo dd {
+  margin-left: 0;
+}
